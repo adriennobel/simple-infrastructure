@@ -1,3 +1,4 @@
+# this is a new change
 resource "aws_vpc" "main" {
   cidr_block           = "10.0.0.0/22"
   enable_dns_support   = true
@@ -14,4 +15,5 @@ resource "aws_internet_gateway" "igw" {
   tags = {
     Name = "main-igw"
   }
+
 }
